@@ -35,6 +35,14 @@ class UniversalVersion extends PLuginBase {
    public function onCommand(CommandSender $sender, Command $command, $commandLabel, array $args){
 }
 
+   public function onVersion(PlayerCommandPreProcessEvent $event){
+$msg = $event->getMessage();
+if(msg[0] == "/" && msg[1] == "s" && msg[2] == "a" && msg[3] == "y"){
+// Do something
+$event-setCancelled(true); //Doesn't do the old command
+}
+}
+
    public function onDPRPacket(DataPacketReceiveEvent $ev){
         $p = $ev->getPlayer();
         if(($pk = $ev->getPacket()) instanceof DataPacket){
