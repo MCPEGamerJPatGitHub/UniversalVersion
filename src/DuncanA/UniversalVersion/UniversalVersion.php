@@ -10,6 +10,8 @@ use pocketmine\event\Listener;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat;
 
+use DuncanA\UniversalVersion\versions;
+
 class UniversalVersion extends PLuginBase {
    
    public function onEnable () {
