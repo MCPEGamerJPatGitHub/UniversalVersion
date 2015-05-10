@@ -11,5 +11,8 @@ class Versions extends PluginBase(){
    	(packet1)
    	//Manages the packets from 0.11.0
    	(packet2)
+   public function Packets{
+      //
+   }
    	
 }
